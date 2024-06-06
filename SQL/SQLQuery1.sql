@@ -1,0 +1,26 @@
+create table atable(aid bigint primary key,avalue varchar(20))
+create table btable(bid bigint primary key,bvalue varchar(20),aid bigint)
+insert into atable values(1,'first')
+insert into atable values(2,'second')
+insert into atable values(3,'third')
+insert into atable values(4,'four')
+insert into atable values(5,'five')
+insert into atable values(6,'six')
+insert into atable values(7,'seven')
+insert into atable values(8,'eight')
+insert into atable values(9,'nine')
+insert into atable values(10,'ten')
+
+insert into btable values(1,'first',1)
+insert into btable values(2,'second',2)
+insert into btable values(3,'third',3)
+insert into btable values(4,'four',4)
+insert into btable values(5,'five',5)
+insert into btable values(6,'six',16)
+insert into btable values(7,'seven',17)
+insert into btable values(8,'eight',18)
+insert into btable values(9,'nine',19)
+insert into btable values(10,'ten',20)
+
+select * from atable
+select * from btable
